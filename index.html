@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Inventory</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+ <section class="all">
+  <!-- SIDE BAR -->
+
+  <section class="side-bar">
+
+   <div class="logo">
+    <img src="img/logo.png" alt="">
+   </div>
+   <div class="list">
+    <ul>
+     <li><img src="img/Vector-5.png" alt=""><a href="#">Manage Inventory</a></li>
+     <li><img src="img/Group1234.png" alt=""><a href="#">Issuing Request</a></li>
+     <li><img src="img/Group12.png" alt=""><a href="#">Stock</a></li>
+    </ul>
+   </div>
+
+  </section>
+
+  <section class="main">
+
+   <div class="head">
+    <div class="in">
+     <div class="comp">
+      <h1>Inventory</h1>
+     </div>
+     <div class="icon">
+      <img src="img/notification.png" alt="">
+      <img src="img/Group (4).png" alt="">
+      <h2>Administrator</h2>
+      <img src="img/Path.png" alt="">
+     </div>
+    </div>
+   </div>
+
+   <div class="title">
+    <button id="add"><a>+ Add Category</a></button>
+   </div>
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#category" role="tab" aria-controls="home"
+      aria-selected="true">Category</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#item" role="tab" aria-controls="profile"
+      aria-selected="false">Items</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#purchase" role="tab" aria-controls="profile"
+      aria-selected="false">Purchase</a>
+    </li>
+   </ul>
+   <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="category" role="tabpanel" aria-labelledby="home-tab">
+     <div class="upper">
+      <div class="input-wrapper">
+       <img src="img/Group (3).png" alt="">
+       <input type="text" placeholder="Seach..">
+      </div>
+      <div class="filter">
+       <li>
+        Filter
+        <img src="img/Group 7189.png" alt="">
+       </li>
+      </div>
+     </div>
+     <table class="table table-striped">
+      <thead>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Category Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Subcategory</th>
+        <th scope="col">Actions</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="tab-pane fade" id="item" role="tabpanel" aria-labelledby="profile-tab">
+     <div class="upper">
+      <div class="input-wrapper">
+       <img src="img/Group (3).png" alt="">
+       <input type="text" placeholder="Seach..">
+      </div>
+      <div class="filter">
+       <li>
+        Filter
+        <img src="img/Group 7189.png" alt="">
+       </li>
+      </div>
+     </div>
+     <table class="table table-striped">
+      <thead>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Category Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Subcategory</th>
+        <th scope="col">Actions</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="tab-pane fade" id="purchase" role="tabpanel" aria-labelledby="profile-tab">
+     <div class="upper">
+      <div class="input-wrapper">
+       <img src="img/Group (3).png" alt="">
+       <input type="text" placeholder="Seach..">
+      </div>
+      <div class="filter">
+       <li>
+        Filter
+        <img src="img/Group 7189.png" alt="">
+       </li>
+      </div>
+     </div>
+     <table class="table table-striped">
+      <thead>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Category Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Subcategory</th>
+        <th scope="col">Actions</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+       <tr>
+        <th scope="row"></th>
+        <td>John</td>
+        <td>john@gmail.com</td>
+        <td>Micheal Obadara</td>
+        <td><button class="bit">...</button></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="inside">
+     <li><h1>Edit Profile</h1></li>
+     <li><h1>Assign Office</h1></li>
+     <li><h1>Set Inactive</h1></li>
+    </div>
+   </div>
+
+   
+
+
+   <div class="pagin">
+    <h5>Showing 1 to 10 of 20 entries</h5>
+    <nav aria-label="Page navigation example">
+     <ul class="pagination">
+      <li class="page-item">
+       <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true"><img src="img/Back (1).png" alt=""></span>
+        <span class="sr-only">Previous</span>
+       </a>
+      </li>
+      <li class="page-item"><a class="page-link active" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+       <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true"><img src="img/Back.png" alt=""></span>
+        <span class="sr-only">Next</span>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </section>
+
+
+ </section>
+
+ <section id="modal">
+  <div class="wrapper">
+
+   <div class="title">
+    <h1>Add Category</h1>
+    <div id="close">
+     <img src="img/x (1).png" alt="">
+    </div>
+   </div>
+
+   
+   <form action="post">
+    <label for="firstname">Company Name</label>
+    <input type="text">
+
+    <label for="firstname">Discription</label>
+    <input type="text">
+
+    <label for="firstname">Subcategory</label>
+    <input type="text">
+   </form>
+
+   <div class="act">
+    <button id="cancel">Cancel</button>
+    <button>Save</button>
+   </div>
+
+
+  </div>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>
